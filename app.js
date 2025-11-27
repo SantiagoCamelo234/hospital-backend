@@ -21,7 +21,7 @@ async function startServer() {
    
     // Configurar CORS para permitir peticiones del frontend
     app.use(cors({
-      origin: process.env.FRONTEND_URL || "http://localhost:5173",
+      origin: "*",
       credentials: true,
       methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
       allowedHeaders: ['Content-Type', 'Authorization']
