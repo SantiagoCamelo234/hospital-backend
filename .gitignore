@@ -1,0 +1,48 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+logs
+*.log
+pm2.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Build / dist
+dist/
+build/
+
+# Cache
+.cache/
+.eslintcache
+.parcel-cache
+
+# Editor
+.vscode/
+.idea/
+
+# Coverage
+coverage/
+
+# Temporary files
+tmp/
+temp/
+
+
+
+# Otros
+*.pem

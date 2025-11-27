@@ -1,0 +1,63 @@
+{
+  "name": "hospital-backend-mongodb",
+  "version": "1.0.0",
+  "description": "Backend hospitalario con MongoDB, programación funcional y concurrente.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "seed": "node scripts/seedAll.js",
+    "create-admin": "node scripts/createAdmin.js",
+    "test": "jest --runInBand",
+    "lint": "eslint . --ext .js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.6.1",
+    "nodemailer": "^6.9.13",
+    "uuid": "^9.0.1",
+    "winston": "^3.14.0",
+    "morgan": "^1.10.0",
+    "express-validator": "^7.2.1",
+    "swagger-ui-express": "^5.0.1",
+    "yamljs": "^0.3.0",
+    "axios": "^1.7.3",
+    "dayjs": "^1.11.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.5",
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "eslint": "^9.7.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.1",
+    "supertest": "^7.1.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "verbose": true,
+    "coverageDirectory": "./coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/config/**",
+      "!src/docs/**",
+      "!src/tests/**"
+    ]
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "functional-programming",
+    "hospital",
+    "backend",
+    "concurrency",
+    "nodejs"
+  ],
+  "author": "Santiago",
+  "license": "MIT"
+}
